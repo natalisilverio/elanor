@@ -1,0 +1,273 @@
+/*
+ * Base structure
+ */
+
+html,
+body {
+  font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  padding-top: 30px;
+}
+/*
+ * Navbar
+ */
+ .navbar
+ {
+   min-height: 50px;
+ }
+ .navbar-default
+ {
+   background-color: white;
+ }
+.navbar-brand
+{
+  padding:10px 10px;
+}
+.eleanor-brand-img
+{
+  max-height: 30px;
+
+}
+.navbar-winegallery-nav>li>a
+{
+  color: #484848;
+  font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  border-left: 1px solid #e7e7e7;
+
+}
+.btn-navbar
+{
+  margin-top: 10px;
+  margin-right: 10px;
+}
+/* Icons */
+.fa-green         {  color:#37b8d3;}
+.fa-green:hover   {  color:orange;}
+.fa-yellow        {  color:#FFB400;}
+.fa-gray          {  color:#c6c6c5;}
+
+.fa-wine-red{        color:#9B232D;}
+.fa-wine-white{      color:#BAB489;}
+.fa-wine-rose{       color:#B28680;}
+/*
+ * Main content
+ */
+
+.main {
+  padding-left:  10px;
+  padding-right:  10px;
+
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+.text-header
+{
+  font-size: 30px;
+}
+
+/* Color and typography stylling */
+
+.light-gray   {  color: #6b6868;}
+.gray         {  color: #484848;}
+.orange       {  color: orange;}
+.blue         {  color: #05afe2; }
+.light-blue   {  color: #39bdd1;}
+
+.line-through {   text-decoration: line-through;}
+
+.smaller      { font-size: 60%;}
+
+.uppercase-label
+{
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.cases-left-label
+{
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.sold-today-label
+{
+    font-size: 11px;
+    color: #39bdd1;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.list-page-search
+{
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+.wine-color-label
+{
+  font-size: 10px;
+  color: #333;
+  text-align: center;
+}
+.wine-colors-list>li{
+  padding-left: 0;
+  padding-right: 0;
+}
+.btn-wine-color {
+    color: #333;
+    background-color:white;
+
+}
+.btn-wine-color:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-radius: 0;
+
+}
+
+/* Image styling */
+.winery-banner
+{
+    background-image: url(../img/winery-banner.png);
+    max-height: 350px;
+
+}
+.search-box
+{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    height: 200px;
+    background-color: white;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+/*Search input*/
+.input-group-addon
+{
+  background-color: white;
+}
+.grape-types-list>li
+{
+  margin-left: 10px;
+}
+.wine-details
+{
+  color: #7f7979;
+  font-size: 11px;
+}
+.wine-info
+{
+  color:#6d6a6a;
+}
+.wine-details-list{
+  margin-bottom: 5px;
+
+}
+.wine-box
+{
+  padding-bottom: 12px;
+  padding-top: 12px;
+  margin-bottom: 12px;
+
+}
+.wine-box:hover
+{
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+
+}
+.wine-title-header
+{
+  margin-bottom: 2px;
+}
+.back-to-top
+{
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  bottom: 4px;
+  background-color: black;
+  right: 0;
+}
+
+/* animations */
+.blink_me {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 2;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 2;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 2s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: 2;
+
+    animation-name: blinker;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+}
+
+@-moz-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+.fade-in {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
